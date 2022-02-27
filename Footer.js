@@ -18,9 +18,9 @@ function Footer() {
                     <form>
                         <input
                             className='footer-input'
-                            name='email'
-                            type='email'
-                            placeholder='Your FirstName'
+                            name='name'
+                            type='name'
+                            placeholder='Your name'
                         />
                         <Button buttonStyle='btn--outline'> SUBMMIT</Button>
                     </form>
@@ -29,15 +29,15 @@ function Footer() {
                         className='footer-input'
                         name='email'
                         type='email'
-                        placeholder='Your LastName'
+                        placeholder='Your email'
                     />
                     <Button buttonStyle='btn--outline'> SUBMMIT</Button>
                 </form>
                 <form>
                 <input
                     className='footer-input'
-                    name='email'
-                    type='email'
+                    name='contact_number'
+                    type='contact_number'
                     placeholder='Your Contact_#'
                 />
                 <Button buttonStyle='btn--outline'> SUBMMIT</Button>
@@ -47,12 +47,22 @@ function Footer() {
                     <form>
                     <input
                         className='footer-input'
-                        name='email'
-                        type='email'
-                        placeholder='Your Email'
+                        name='room_price'
+                        type='room_price'
+                        placeholder='Your room_price'
                     />
                     <Button buttonStyle='btn--outline'> SUBMMIT</Button>
                 </form>
+            
+                <form>
+                <input
+                    className='footer-input'
+                    name='total_bill'
+                    type='total_bill'
+                    placeholder='Your total_bill'
+                />
+                <Button buttonStyle='btn--outline'> SUBMMIT</Button>
+            </form>
                 </div>
 
             </section>
@@ -89,7 +99,7 @@ function Footer() {
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
                             THE BEST HOTEL
-                            <i className="fa-solid fa-book-open-reader"/>
+                            
                         </Link>
                     </div>
                     <small class='website-rights'>WHY NOT CHOOSING US</small>

@@ -11,7 +11,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if (window.innerWidth <= 960) {
+        if (window.innerWidth <= 900) {
             setButton(false);
         } else {
             setButton(true);
@@ -29,10 +29,10 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        <i className="Pen-to-Square"></i>THE BEST HOTEL
+                        <i className=" fab fa-instagram "></i>THE BEST HOTEL
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <i className={click ? 'fab fa-instagram' : 'fas fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -42,7 +42,7 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/Contact'
+                                to='/contact'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
@@ -51,11 +51,11 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/About Us'
+                                to='/about'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                About Us
+                                About 
                             </Link>
                         </li>
 
